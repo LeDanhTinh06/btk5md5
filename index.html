@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wireframes — Mobile / Desktop / Landing</title>
+  <style>
+    
+    *{box-sizing:border-box}
+    body{font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:24px; background:#f7f7f7; color:#111}
+    h1{font-size:1.25rem; margin:0 0 12px}
+    p.small{font-size:0.9rem; color:#444}
+
+    
+    .grid{display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap}
+    .panel{background:#fff; border:2px solid #222; padding:12px; width:340px; box-shadow:0 6px 18px rgba(0,0,0,0.05)}
+    .panel.wide{width:680px}
+
+   
+    .wire{border:2px dashed #333; background:linear-gradient(0deg,#fff,#fafafa); padding:8px}
+    .header{height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 10px}
+    .logo{width:110px; height:18px; border:2px solid #333}
+    .menu{width:60px; height:18px; border:2px solid #333; text-align:center; line-height:18px}
+    .nav{height:36px; margin-top:10px; border:1px solid #777; display:flex; gap:8px; align-items:center; padding:6px}
+    .hero{height:160px; margin-top:12px; border:2px solid #333; padding:10px}
+    .content-block{height:56px; margin-top:12px; border:1px solid #888; padding:8px}
+    .footer{height:44px; margin-top:12px; border-top:1px solid #666; display:flex; align-items:center; padding-left:8px}
+
+   
+    .layout-row{display:flex; gap:12px}
+    .main{flex:1}
+    .sidebar{width:170px; border:1px dashed #666; padding:8px}
+
+    .hero-split{display:flex; gap:12px}
+    .hero-split .visual{flex:1; border:2px solid #333; height:120px}
+    .hero-split .cta{width:220px; border:2px solid #333; height:120px; padding:8px}
+
+   
+    .mobile-frame{width:260px; border:2px solid #222; padding:8px}
+    .hamburger{width:36px; height:22px; display:flex; flex-direction:column; justify-content:space-between}
+    .hamburger span{display:block; height:3px; background:#222}
+
+    
+    .notes{margin-top:12px; font-size:0.86rem; color:#333}
+
+    
+    @media(min-width:980px){
+      .panel.wide{width:820px}
+    }
+  </style>
+</head>
+<body>
+  <h1>Wireframe — Mobile, Desktop, Landing</h1>
+  <p class="small">Trang này mô phỏng ba bản phác thảo wireframe </p>
+
+  <div class="grid">
+   
+    <section class="panel" aria-label="Mobile view">
+      <h2 style="margin:0 0 8px; font-size:1rem">Mobile view (ví dụ 375×812)</h2>
+      <div class="wire">
+        <div class="header">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="nav">Navigation / Menu</div>
+        <div class="hero">Hero / Primary content</div>
+        <div class="content-block">Content block 1</div>
+        <div class="content-block">Content block 2</div>
+        <div class="content-block">Content block 3</div>
+        <div class="footer">Footer / Copyright</div>
+      </div>
+      <p class="notes">...</p>
+    </section>
+
+   
+    <section class="panel wide" aria-label="Desktop view">
+      <h2 style="margin:0 0 8px; font-size:1rem">Desktop view (wide layout)</h2>
+      <div class="wire">
+        <div class="header" style="border-bottom:0">
+          <div class="logo"></div>
+          <div style="display:flex; gap:8px; align-items:center;"><div class="menu">Nav</div><div class="menu">Search</div></div>
+        </div>
+        <div class="nav">Full navigation (top) — primary links</div>
+
+        <div class="layout-row">
+          <div class="main">
+            <div class="hero">Hero / Primary visual or carousel</div>
+            <div class="content-block">Content block A</div>
+            <div class="content-block">Content block B</div>
+            <div class="content-block">Content block C</div>
+          </div>
+          <aside class="sidebar">Sidebar (widgets, links, promotions)</aside>
+        </div>
+
+        <div class="footer">Footer — copyright and utility links</div>
+      </div>
+      <p class="notes">...</p>
+    </section>
+
+    
+    <section class="panel wide" style="width:340px; min-height:240px" aria-label="Landing page">
+      <h2 style="margin:0 0 8px; font-size:1rem">Landing page (alternate hero)</h2>
+      <div class="wire">
+        <div class="header" style="border-bottom:0">
+          <div class="logo"></div>
+        </div>
+        <div class="nav">Navigation (minimal)</div>
+
+        <div class="hero-split" style="margin-top:12px">
+          <div class="visual">Large visual / illustration</div>
+          <div class="cta">CTA / Signup form<br><small>Short form fields + button</small></div>
+        </div>
+
+        <div class="content-block">Social proof / features</div>
+        <div class="footer">Footer / small links</div>
+      </div>
+      <p class="notes">...</p>
+    </section>
+
+  </div>
+
+  <hr style="margin:20px 0">
+  <p class="small">NIGGER</p>
+</body>
+</html>
